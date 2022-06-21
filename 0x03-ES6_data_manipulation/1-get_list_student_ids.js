@@ -1,10 +1,8 @@
 function getListStudentIds(arr) {
   if (Array.isArray(arr) === true) {
-    const ans = arr.map(function(value) {
-    return value.id;
-    });
+    const ans = arr.map((value) => value.id);
     return ans;
   }
-    return [];
+  return [];
 }
 export default getListStudentIds;
