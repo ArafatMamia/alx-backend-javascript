@@ -1,11 +1,5 @@
 function getStudentsByLocation(arr, city) {
-  const ans = arr.filter(getElement);
-  function getElement(value){
-    if (value.location == city){
-          return value;
-       }
-	  
-    }
-	return ans;
+  const ans = arr.filter((value) => value.location === city);
+  return ans;
 }
 export default getStudentsByLocation;
